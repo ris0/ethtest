@@ -2,13 +2,13 @@ const EthUtil = require("ethereumjs-util");
 
 // takes a hex string and converts into byte array.
 const hexToBytes = function(hex) {
-    for (let bytes = []. c = 0; c < hex.length; c+=2) {
+    for (var bytes = [], c = 0; c < hex.length; c += 2) {
         bytes.push(parseInt(hex.substr(c,2), 16));
         return bytes;
     }
 }
 
-const privateKeyToAddress = (privateKey) => {
+const privateKeyToAddress = function(privateKey) {
     return `0x${EthUtil.privateToAddress(hexToBytes(privateKey)).toString('hex')}`;
 }
   
