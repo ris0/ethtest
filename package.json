@@ -2,6 +2,7 @@
     "name": "ris0",
     "version": "",
     "dependencies": {
+        "ethereumjs-tx": "^1.3.3",
         "ethereumjs-util": "^5.1.3",
         "web3": "0.17.0-alpha"
     }
