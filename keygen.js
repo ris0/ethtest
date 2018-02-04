@@ -13,5 +13,4 @@ const privateKeyToAddress = function(privateKey) {
 }
   
 console.log(privateKeyToAddress(process.argv[2]))
-
 // you can sign arb strings of data and then verify if they were signed with your public key
