@@ -53,3 +53,7 @@ tx.serialize().toString('hex');
 web3.eth.sendRawTransaction(`0x${tx.serialize().toString('hex')}`, (error, data) => {
     if (!error) { console.log(data) }
 });
+
+// interact with the mainnet via metamask
+// it gives you an ethereum wallet with chrome extension while running the network
+// shapeshift allows you to quickly transact between different cryptocurrencies
